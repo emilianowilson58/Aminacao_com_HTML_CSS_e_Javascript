@@ -1,0 +1,64 @@
+:root{
+    --fundo: rgb(0, 0, 0);
+    --sombra: 5px 5px 10px rgba(0,0,0,0.200);
+}
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+#container{
+    width: 300px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+    background-color: var(--fundo);
+    box-shadow: var(--sombra);
+}
+
+.icon, .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+#on{  /*lâmpada*/
+    color: rgb(255, 208, 0);
+    display: none;
+    transition: .4s linear;
+    border-radius: 50%;
+    padding: 10px;
+    filter: drop-shadow(0 0 30px rgb(255, 255, 0));
+    
+
+}
+
+#off{ /*lâmpada*/
+    position: absolute;
+    color: white;
+    transition: .2s linear;
+}
+
+#btn_on{ /*botão desligado*/
+  color: red;
+  transition: .2s linear;
+  display: none;
+}
+
+#btn_off{ /*botão ligado*/
+    position: absolute;
+    transition: .2s linear;
+    color:  rgb(1, 128, 18);
+}
+
